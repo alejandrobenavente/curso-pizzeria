@@ -16,7 +16,7 @@ router.get('/', async function (req, res, next) {
 router.get('/eliminar/:id', async (req, res, next) => {
     const id = req.params.id;
     await promocionesModel.deletePromocionesById(id);
-    res.redirect('/admin/precios')
+    res.redirect('/admin/precios',)
 });
 
 module.exports = router;
